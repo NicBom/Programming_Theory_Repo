@@ -6,7 +6,7 @@ public class SuperCar : Car
 {
     void Start()
     {
-        carSpeed = 50f;
+        carSpeed = 100f;
         carTurnSpeed = 250f;
         printCarYear();
     }
