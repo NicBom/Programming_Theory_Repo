@@ -8,7 +8,7 @@ public class Car : MonoBehaviour
     private float turnSpeed = 50f;
     int year = 1980;
 
-    public float carSpeed
+    public float carSpeed //ENCAPSULATION
     {
         get { return speed; }
         set
@@ -24,7 +24,7 @@ public class Car : MonoBehaviour
         }
     }
 
-    public float carTurnSpeed
+    public float carTurnSpeed//ENCAPSULATION
     {
         get { return turnSpeed; }
         set
@@ -40,7 +40,7 @@ public class Car : MonoBehaviour
         }
     }
 
-    public int carYear
+    public int carYear//ENCAPSULATION
     {
         get { return year; }
         set
@@ -64,12 +64,7 @@ public class Car : MonoBehaviour
         printCarYear();
     }
 
-    public void SetSpeed(float speedSet)
-    {
-        carSpeed = speedSet;
-    }
-
-    private void Move()
+    private void Move() //ABSTRACTION
     {
         transform.Translate(Vector3.forward * verticalInput * carSpeed * Time.deltaTime);
     }
